@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+.link {
+    color: #00B7FF;
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link:hover {
+    text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post {
+    width: 310px;
+    height: 450px;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.post h3:hover,
+.title:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
+.post img {
+    width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 350px;
+    height: 450px;
+    margin: 20px auto;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    margin: 5px
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 250px;
+    height: 60px;
+    margin: 5px
+}
+
+button {
+    border: 1px solid black;
+    background-color: rgba(33, 37, 41, 0.8);
+    color: rgba(0, 183, 255, 0.95);
+    width: 200px;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: rgba(33, 37, 41, 1);
+}
+
+.logout,
+.filter {
+    width: 100px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logout:hover,
+.filter:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 40px;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pagination span {
+    margin: 0 5px;
+}
+
+.detailed-post {
+    width: 750px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.detailed-post .detailed-image {
+    width: 50%;
+    height: auto;
+}
+
+.post-content {
+    padding: 10px;
+    flex: 1;
+}
+
+.filterBox {
+    width: 600px;
 }
